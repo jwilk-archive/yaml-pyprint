@@ -13,7 +13,7 @@ cache: pip
 before_install:
 - pyflakes=pyflakes
 - if [[ $TRAVIS_PYTHON_VERSION = 3.[23] ]]; then pyflakes='pyflakes<2'; fi
-- pyyaml=PyYAML
+- pyyaml=pyyaml
 - if [[ $TRAVIS_PYTHON_VERSION = 3.2 ]]; then pyyaml='pyyaml<3.13'; fi
 install:
 - pip install $pyyaml
