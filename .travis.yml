@@ -16,7 +16,7 @@ before_install:
 - pyflakes=pyflakes
 - if [[ $TRAVIS_PYTHON_VERSION = 3.[23] ]]; then pyflakes='pyflakes<2'; fi
 - pyyaml=pyyaml
-- if [[ $TRAVIS_PYTHON_VERSION = 3.2 ]]; then pyyaml='pyyaml<3.13'; fi
+- if [[ $TRAVIS_PYTHON_VERSION = 3.[234] ]]; then pyyaml='pyyaml<3.13'; fi
 install:
 - python3 -m pip install $pyyaml
 - python3 -m pip install pydiatra $pyflakes
